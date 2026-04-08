@@ -21,6 +21,38 @@
 \begin{document}
     \maketitle
 \newpage
-\section{你好鸿蒙}
+\section{常用指令}
+行内公式使用/.$/.$的指令，如分式$\frac{1}{2}$此为行内公式
+
+公式内出现中文将不编译，部分条件下可使用text{}指令进行加入中文
+
+行外公式使用begin，如下
+\begin{equation}
+    \frac{1}{2}
+\end{equation}
+插入图片使用
+\begin{figure}[h]%[h]为here
+    \centering%居中
+    \includegraphics[width=0.7\textwidth]{Figures/开源鸿蒙简介.png}%插入图片，第一个为宽度=多少个全文宽度，第二个为图片地址
+    \caption{注释}
+\end{figure}
+
+一级小标题用
+\begin{enumerate}
+    \item 你好
+    \begin{enumerate}
+        \item 鸿蒙
+        \begin{enumerate}
+            \item 姚神
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+换行在Latex内输入两个换行或newline指令
+
+换页为newpage
+
+如果想要英文字体更好看可以使用行内公式环境，如下
+
+newpage,$newpage$
 
 \end{document}
